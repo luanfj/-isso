@@ -12,7 +12,7 @@ Descrição
 # Progresso
 Acompanhe o que já foi feito e o que pretendemos implementar no nosso querido bot.
 
-- [ ] Estrutura
+- [X] Estrutura
 
 #### Comandos
 - [ ] Kick
