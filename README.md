@@ -8,7 +8,7 @@ Um discord bot multipurpose criado em [Discord.js](https://github.com/discordjs/
   <a href="https://github.com/Grawlk/-isso/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="LICENCE"></a>
 </p>
 
-# [!Dependências](https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png) | Dependências
+## 📦 | Dependências
 * [discord.js](https://github.com/discordjs/discord.js/) - Módulo utilizado para interagir com a [Discord API](https://discordapp.com/developers/docs/intro)
 
 # Progresso
