@@ -8,11 +8,7 @@ Um discord bot multipurpose criado em [Discord.js](https://github.com/discordjs/
   <a href="https://github.com/Grawlk/-isso/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="LICENCE"></a>
 </p>
 
-## 📦 Dependências
-* [discord.js](https://github.com/discordjs/discord.js/)
-* [walk](https://git.coolaj86.com/coolaj86/fs-walk.js.git)
-
-# Progresso
+## Progresso
 Acompanhe o que já foi feito e o que pretendemos implementar no nosso querido bot.
 
 - [X] Estrutura
