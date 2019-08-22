@@ -9,7 +9,7 @@ Um discord bot multipurpose criado em [Discord.js](https://github.com/discordjs/
 </p>
 
 ## 📦 | Dependências
-* [discord.js](https://github.com/discordjs/discord.js/)(https://discordapp.com/developers/docs/intro)
+* [discord.js](https://github.com/discordjs/discord.js/)
 * [walk](https://git.coolaj86.com/coolaj86/fs-walk.js.git)
 
 # Progresso
