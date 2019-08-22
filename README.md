@@ -13,3 +13,12 @@ Descrição
 Acompanhe o que já foi feito e o que pretendemos implementar no nosso querido bot.
 
 - [ ] Estrutura
+
+#### Comandos
+- [ ] Kick
+- [ ] Ban
+- [ ] SetPrefix
+- [ ] Setup
+- [ ] Prefix
+- [ ] Config
+- [ ] Config > Language
