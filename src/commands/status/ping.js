@@ -4,7 +4,8 @@ class PingCommand extends Command {
   constructor() {
     super({
       name: "ping",
-      aliases: ['p']
+      aliases: ['p'],
+      category: "status"
     });
   }
   
