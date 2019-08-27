@@ -1,7 +1,7 @@
 {
   "name": "bot",
   "version": "0.0.1",
-  "description": "Um simpels bot.",
+  "description": "Um simples bot.",
   "main": "index.js",
   "scripts": {
     "start": "sucrase-node ./src/index.js"
