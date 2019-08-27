@@ -1,17 +1,19 @@
-const Event = require("../struct/Event");
+import Event from '../struct/Event';
 
-class MessageEvent extends Event {
+class Message extends Event {
   constructor() {
     super("message");
   }
-  
+
   run(message) {
-    if(message.author.bot) return;
+    if(message.author.bot || message.channel.type === "dm") return;
+    
+    const prefix = "]";
     
     this.client.commands.forEach(command => {
-      if(command.start(message)) return;
+      if(command.execute(message, prefix)) return;
     });
   }
 }
 
-module.exports = MessageEvent;
+export default Message;
