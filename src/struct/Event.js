@@ -1,15 +1,17 @@
 class Event {
   constructor(eventName) {
-    if(!eventName) throw new Error("An eventName is needed.");
-    
+    if (!eventName) throw new Error('An eventName is needed.');
+
     this.eventName = eventName;
   }
-  
+
   register(client) {
     this.client = client;
     
-    client.on(this.eventName, (...args) => { this.run(...args) });
+    client.on(this.eventName, (...args) => {
+      this.run(...args);
+    });
   }
 }
 
-module.exports = Event;
+export default Event;
