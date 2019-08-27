@@ -1,25 +1,31 @@
-const { walk } = require("walk");
-const { resolve, sep } = require("path");
+import { walk } from 'walk';
+import { resolve, sep } from 'path';
+import { readdirSync, statSync, existsSync } from 'fs';
 
 class Loader {
   constructor(client) {
     this.client = client;
   }
-  
+
   Load(path) {
-    if(!path) return;
-    
-    walk(path).on("file", (root, stats, next) => {
-      if(!stats.name.endsWith(".js")) return;
-      
-      const Loading = new (require(resolve(root) + sep + stats.name));
-      Loading.register(this.client);
-      
-      console.log("[Loaded] " + stats.name);
-      
-      next();
+    if (!path) return;
+
+    readdirSync(path).forEach(async result => {
+      try {
+        let rPath = path + sep + result;
+
+        if (result.endsWith('.js')) {
+          const Loading = require(rPath);
+          
+          new Loading.default().register(this.client)
+          
+          console.log('[Loaded] ' + result);
+        } else if (statSync(rPath).isDirectory) {
+          this.Load(rPath);
+        }
+      } catch (e) {}
     });
   }
 }
 
-module.exports = Loader;
+export default Loader;
