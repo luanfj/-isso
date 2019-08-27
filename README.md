@@ -9,6 +9,6 @@ Um discord bot multipurpose criado em [Discord.js](https://github.com/discordjs/
   Entre no nosso <a href="https://discord.gg/NY9ZG7P" target="_blank">Discord</a> para obter ajuda e debater sobre o nosso Desenvolvimento
 </p>
 
-## Comandos
+### Comandos
 #### Status
 - `ping` Exibe o tempo de resposta do bot. 
