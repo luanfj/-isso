@@ -1,13 +1,13 @@
-const Event = require("../struct/Event");
+import Event from '../struct/Event';
 
-class ReadyEvent extends Event {
+class Ready extends Event {
   constructor() {
     super("ready");
   }
-  
+
   run() {
-    console.log("Iniciado: " + this.client.user.tag)
+    console.log('Iniciado como: ' + this.client.user.tag);
   }
 }
 
-module.exports = ReadyEvent;
+export default Ready;
