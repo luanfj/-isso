@@ -9,16 +9,6 @@ Um discord bot multipurpose criado em [Discord.js](https://github.com/discordjs/
   Entre no nosso <a href="https://discord.gg/NY9ZG7P" target="_blank">Discord</a> para obter ajuda e debater sobre o nosso Desenvolvimento
 </p>
 
-## Progresso
-Acompanhe o que já foi feito e o que pretendemos implementar no nosso querido bot.
-
-- [X] Estrutura
-
-#### Comandos
-- [ ] Kick
-- [ ] Ban
-- [ ] SetPrefix
-- [ ] Setup
-- [ ] Prefix
-- [ ] Config
-- [ ] Config > Language
+## Comandos
+#### Status
+- `ping` Exibe o tempo de resposta do bot. 
