@@ -1,20 +1,21 @@
-const { Client } = require("discord.js");
-const Loader = require("./Loader");
+import { Client } from 'discord.js';
+import Loader from './Loader';
+import { join } from 'path';
 
 class BaseClient extends Client {
-  constructor(options = {}) {
-    super(options);
+  constructor() {
+    super();
     
     this.commands = [];
   }
-  
+
   async login(token) {
     const loader = await new Loader(this);
-    loader.Load("./src/events");
-    loader.Load("./src/commands");
+    loader.Load(join(__dirname, '..', 'commands'));
+    loader.Load(join(__dirname, '..', 'events'));
     
-    super.login(token);
+    return super.login(token);
   }
 }
 
-module.exports = BaseClient;
+export default BaseClient;
