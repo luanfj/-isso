@@ -5,8 +5,8 @@ class Command {
     this.category = options.category;
     
     this.onlyOwner = options.onlyOwner || false;
-		this.memberPermissions = options.memberPermissions || [];
-		this.botPermissions = options.botPermissions || [];
+    this.memberPermissions = options.memberPermissions || [];
+    this.botPermissions = options.botPermissions || [];
   }
 
   register(client) {
@@ -31,16 +31,16 @@ class Command {
         const missingMemberPermissions = this.memberPermissions.filter((permission) => !message.member.hasPermission(permission));
         
         if (missingMemberPermissions.length !== 0) {
-					message.reply("você não tem permissão para executar este comando!");
-					return true;
-				}
+	  message.reply("você não tem permissão para executar este comando!");
+	  return true;
+	}
         
         const missingBotPermissions = this.botPermissions.filter((permission) => !message.guild.me.hasPermission(permission));
 
-				if (missingBotPermissions.length !== 0) {
-					message.reply("Eu não consigo executar este comando pois eu preciso das permissões: __**" + missingBotPermissions.join(", ") + "**__!");
-					return true;
-				}
+	if (missingBotPermissions.length !== 0) {
+	  message.reply("Eu não consigo executar este comando pois eu preciso das permissões: __**" + missingBotPermissions.join(", ") + "**__!");
+	  return true;
+	}
         
         const args = rawArgs;
         args.shift();
